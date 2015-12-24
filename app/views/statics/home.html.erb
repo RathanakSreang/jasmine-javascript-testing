@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1 class="title">This Is Home Page</h1>
+  <p>Welcome <%= logged_in? ? current_user.name : "new guest" %></p>
+
+  <center>
+    <% if logged_in? %>
+      <%= link_to "Sign Out", logout_path, class: "btn btn-primary btn-lg" %>
+    <% else %>
+      <%= link_to "Sign Up", sign_up_path, class: "btn btn-primary btn-lg" %>
+      <%= link_to "Sign In", login_path, class: "btn btn-primary btn-lg" %>
+    <% end %>
+  </center>
+</div>
+
