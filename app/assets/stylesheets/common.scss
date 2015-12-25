@@ -9,3 +9,15 @@ body {
 .title {
   text-align: center;
 }
+
+.error {
+  margin-top: 10px;
+  color: #d9534f;
+}
+.error_form {
+  border-color: #d9534f;
+}
+
+.success_form {
+  border-color: #5cb85c;
+}
